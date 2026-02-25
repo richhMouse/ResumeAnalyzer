@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, UploadFile, File
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
-from app.services.ats_engine import ATSEngine
+from ..services.ats_engine import ATSEngine
 import io
 from PyPDF2 import PdfReader
 from docx import Document

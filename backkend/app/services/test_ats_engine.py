@@ -1,5 +1,5 @@
 import pytest
-from app.services.ats_engine import ATSEngine
+from .ats_engine import ATSEngine
 
 
 class TestATSScoringModel:

@@ -98,7 +98,7 @@ class TestAnalyzeEndpoint:
         """Should return error for invalid role."""
         response = get_client().post("/api/analyze", json={
             "resume_text": "Some resume text",
-            "target_role": "Software Engineer"
+            "target_role": "Invalid Role Title"
         })
         
         assert response.status_code == 400

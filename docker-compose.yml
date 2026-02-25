@@ -21,8 +21,6 @@ services:
     container_name: ats-frontend
     ports:
       - "5173:80"
-    environment:
-      - VITE_API_URL=http://localhost:8000
     command: nginx -g 'daemon off;'
     depends_on:
       - backend
